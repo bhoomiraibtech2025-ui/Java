@@ -10,7 +10,8 @@ class Student {
     }
 
     // Parameterized Constructor
-    Student(String n, int r) {
+    Student(String n, int r) 
+    {
         name = n;
         rollNo = r;
     }
