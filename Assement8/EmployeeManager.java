@@ -1,6 +1,6 @@
 package Assement8;
 
-class Employee {
+class Employe{
 
     String name = "Bhoomi";
     double salary = 30000;
