@@ -1,24 +1,26 @@
 package Assement16;
+
 import java.util.Scanner;
-class Login
+
+class atm
 {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
 
-        String correctPassword = "12345";
+        int correctPIN = 1234;
 
-        System.out.print("Enter password: ");
-        String password = sc.nextLine();
+        System.out.print("Enter ATM PIN: ");
+        int pin = sc.nextInt();
 
         try
         {
-            if (!password.equals(correctPassword))
+            if (pin != correctPIN)
             {
-                throw new Exception("Invalid Password");
+                throw new Exception("Invalid PIN");
             }
 
-            System.out.println("Login Successful");
+            System.out.println("PIN Verified Successfully");
         }
         catch (Exception e)
         {
@@ -26,7 +28,7 @@ class Login
         }
         finally
         {
-            System.out.println("Login process completed");
+            System.out.println("PIN verification process completed.");
         }
 
         sc.close();
