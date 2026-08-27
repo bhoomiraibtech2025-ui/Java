@@ -1,6 +1,8 @@
-package Assement16;
+
+package Assement15;
 import java.util.Scanner;
-class Login
+
+class login1
 {
     public static void main(String[] args)
     {
@@ -26,7 +28,7 @@ class Login
         }
         finally
         {
-            System.out.println("Login process completed");
+            System.out.println("Login verification completed.");
         }
 
         sc.close();
