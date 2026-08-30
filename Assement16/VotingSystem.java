@@ -1,0 +1,30 @@
+package Assement16;
+
+import java.util.Scanner;
+
+// Custom Exception
+class InvalidAgeException extends Exception {
+    InvalidAgeException(String message) {
+        super(message);
+    }
+}
+
+public class VotingSystem {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your age: ");
+        int age = sc.nextInt();
+
+        try {
+            if (age < 18) {
+                throw new InvalidAgeException("You are not eligible for voting.");
+            }
+
+            System.out.println("You are eligible for voting.");
+        }
+        catch (InvalidAgeException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
