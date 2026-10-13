@@ -10,7 +10,7 @@ public class StudentDatabaseConnection {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
-            String db = "jdbc:mysql://localhost:3306/employee";
+            String db = "jdbc:mysql://localhost:3306/student";
             String user = "root";
             String password = "sit123";
 
